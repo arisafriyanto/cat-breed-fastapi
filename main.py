@@ -12,7 +12,8 @@ class_names = ['Abyssinian', 'Bengal', 'Birman', 'Bombay', 'British Shorthair', 
 app = FastAPI()
 
 # load model TensorFlow yang udh disimpen di folder
-model_path = "/app/models" # tentuin path modelnya
+# tentuin path modelnya
+model_path = "/path/models"
 model = keras.models.load_model(model_path)
 
 @app.get("/", status_code=200)
